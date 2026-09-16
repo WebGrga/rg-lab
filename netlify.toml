@@ -24,12 +24,6 @@
   force = true
 
 [[redirects]]
-  from = "/jev-board"
-  to = "/jev-board/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/jev-board/api/*"
   to = "https://jev-board-api.roko-experiments.workers.dev/:splat"
   status = 200
