@@ -24,6 +24,24 @@
   force = true
 
 [[redirects]]
+  from = "/jev-board"
+  to = "/jev-board/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/jev-board/api/*"
+  to = "https://jev-board-api.roko-experiments.workers.dev/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/jev-board/*"
+  to = "https://rg-jev-board.netlify.app/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

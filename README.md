@@ -11,6 +11,7 @@ RG Lab deliberately does not contain the implementation of its listed projects. 
 | Public route | Project repository | Runtime |
 | --- | --- | --- |
 | `/btc-jev` | `WebGrga/btc-jev-signal` | Netlify frontend, Cloudflare Worker API, Cloudflare D1 |
+| `/jev-board/` | `WebGrga/jev-board-lab` | Netlify frontend, optional Cloudflare Worker API |
 
 ## Add a project
 
