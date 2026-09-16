@@ -5,6 +5,14 @@
 [build.environment]
   NODE_VERSION = "20.19.0"
 
+[[edge_functions]]
+  function = "jev-board-auth"
+  path = "/jev-board"
+
+[[edge_functions]]
+  function = "jev-board-auth"
+  path = "/jev-board/*"
+
 [[redirects]]
   from = "/btc-jev/api/*"
   to = "https://btc-jev-signal.roko-experiments.workers.dev/api/:splat"
