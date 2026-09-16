@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RG Lab — independent software experiments by Roko Grga." />
+    <meta name="color-scheme" content="dark" />
+    <title>RG Lab — Experiments</title>
+  </head>
+  <body>
+    <div class="lab-shell">
+      <header class="lab-header">
+        <a href="/" class="brand">RG Lab</a>
+        <a href="https://www.rokogrga.com">rokogrga.com ↗</a>
+      </header>
+      <main class="lab-main">
+        <section class="lab-intro">
+          <span class="section-kicker">Independent software experiments</span>
+          <h1>Small systems for testing ambitious ideas.</h1>
+          <p>RG Lab is a public collection of working projects. Each experiment exposes what it receives, what it produces, and how its results are measured.</p>
+        </section>
+        <section class="lab-projects" aria-labelledby="projects-title">
+          <div class="lab-section-heading">
+            <h2 id="projects-title">Projects</h2>
+            <span>1 live</span>
+          </div>
+          <a class="project-card" href="/btc-jev">
+            <div class="project-card-top">
+              <span class="project-index">01</span>
+              <span class="status">Live</span>
+            </div>
+            <div>
+              <h3>BTC–Jev</h3>
+              <p>A continuously scored BTC direction experiment using TypeSafe Jev probability judgments and fixed market-data inputs.</p>
+            </div>
+            <dl>
+              <div><dt>Forecasts</dt><dd>15m · 1h · 4h · UTC close</dd></div>
+              <div><dt>Latest 15m call</dt><dd id="latest-call">Collecting data</dd></div>
+              <div><dt>Execution</dt><dd>Cloudflare Worker · D1</dd></div>
+            </dl>
+            <span class="project-open">Open experiment →</span>
+          </a>
+        </section>
+      </main>
+      <footer class="lab-footer"><span>RG Lab</span><span>Built by Roko Grga</span></footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+

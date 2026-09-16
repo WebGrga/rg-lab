@@ -1,0 +1,30 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20.19.0"
+
+[[redirects]]
+  from = "/btc-jev/api/*"
+  to = "https://btc-jev-signal.roko-experiments.workers.dev/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/btc-jev"
+  to = "https://rg-btc-jev.netlify.app/btc-jev"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/btc-jev/*"
+  to = "https://rg-btc-jev.netlify.app/btc-jev/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
