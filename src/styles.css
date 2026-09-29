@@ -40,6 +40,7 @@ a { color: inherit; }
 .project-index { color: var(--muted); font: 11px var(--mono); }
 .status { display: inline-flex; width: max-content; align-items: center; gap: 5px; color: var(--green); font: 700 10px var(--mono); text-transform: uppercase; }
 .status::before { width: 6px; height: 6px; border-radius: 50%; background: currentColor; content: ""; }
+.status-archived { color: #c4a56a; }
 .project-card h3 { margin: -5px 0 8px; font-size: clamp(26px, 3.5vw, 42px); letter-spacing: -.04em; }
 .project-card p { max-width: 520px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
 .project-card dl { display: grid; gap: 11px; margin: 0; }
@@ -61,4 +62,3 @@ a { color: inherit; }
   .project-card { grid-template-columns: 1fr; gap: 18px; }
   .project-card dl div { grid-template-columns: 110px 1fr; }
 }
-
