@@ -16,6 +16,14 @@
 }
 
 * { box-sizing: border-box; }
+.status-prototype { color: var(--muted); }
+.status-prototype::before { display: none; }
+.implementation-note { max-width: 75ch; margin: 28px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.lab-secondary { margin-top: 60px; }
+.lab-secondary h2 { font-size: 18px; }
+.lab-secondary a { display: flex; flex-wrap: wrap; gap: 12px; text-decoration-color: var(--blue); text-underline-offset: 5px; }
+.lab-secondary span { color: var(--muted); font-size: 13px; }
+a:focus-visible { outline: 2px solid var(--blue); outline-offset: 6px; }
 html { background: var(--bg); }
 body { min-width: 320px; min-height: 100dvh; margin: 0; background: var(--bg); color: var(--text); }
 a { color: inherit; }

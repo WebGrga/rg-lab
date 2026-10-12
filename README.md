@@ -1,6 +1,6 @@
 # RG Lab
 
-Public index and same-domain path router for Roko Grga's independent software experiments.
+Public AI engineering showcase and same-domain path router for Roko Grga's experiments. The three primary projects are Frontend Director, BTC–Jev, and Problem Hunter; Jev Board Lab remains a secondary experiment.
 
 Live: **https://lab.rokogrga.com**
 
@@ -28,5 +28,5 @@ npm install
 npm run dev
 ```
 
-The local Vite proxy exposes the production BTC–Jev read-only API at `/btc-jev/api/*` so the project card can show the latest forecast.
+The hub links to each implementation without running model requests. BTC–Jev's dashboard remains at `/btc-jev`; archived direction forecasts are not displayed as current hub activity. Frontend Director and Problem Hunter link to their public code and documented prototype limits.
 

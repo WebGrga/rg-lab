@@ -3,59 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="RG Lab — independent software experiments by Roko Grga." />
+    <meta name="description" content="RG Lab by Roko Grga: AI systems and agentic workflows with bounded context, validation, controlled execution, and evaluation." />
     <meta name="color-scheme" content="dark" />
-    <title>RG Lab — Experiments</title>
+    <meta property="og:title" content="RG Lab | AI Engineering Experiments" />
+    <meta property="og:description" content="Frontend Director, BTC–Jev, and Problem Hunter. Working systems, evidence, and explicit limits." />
+    <meta property="og:url" content="https://lab.rokogrga.com/" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://lab.rokogrga.com/" />
+    <title>RG Lab | AI Engineering Experiments</title>
   </head>
   <body>
     <div class="lab-shell">
       <header class="lab-header">
         <a href="/" class="brand">RG Lab</a>
-        <a href="https://www.rokogrga.com">rokogrga.com ↗</a>
+        <a href="https://rokogrga.com">rokogrga.com ↗</a>
       </header>
       <main class="lab-main">
         <section class="lab-intro">
-          <span class="section-kicker">Independent software experiments</span>
-          <h1>Small systems for testing ambitious ideas.</h1>
-          <p>RG Lab is a public collection of working projects. Each experiment exposes what it receives, what it produces, and how its results are measured.</p>
+          <span class="section-kicker">AI engineering by Roko Grga</span>
+          <h1>AI systems.<br />Tested in public.</h1>
+          <p>I build agentic workflows with a full-stack development background: bounded context, validated outputs, controlled execution, and evaluations that expose the limits.</p>
         </section>
         <section class="lab-projects" aria-labelledby="projects-title">
           <div class="lab-section-heading">
-            <h2 id="projects-title">Projects</h2>
-            <span>2 live</span>
+            <h2 id="projects-title">Primary showcases</h2>
+            <span>Code, controls, and outcomes</span>
           </div>
+          <a class="project-card" href="https://github.com/WebGrga/frontend-director" target="_blank" rel="noreferrer">
+            <div class="project-card-top"><span class="project-index">01</span><span class="status status-prototype">Prototype</span></div>
+            <div><h3>Frontend Director</h3><p>AI-powered React editor with bounded context, validated edits, user approval, and reversible history. Structural additions separate read-only planning from approved execution.</p></div>
+            <dl>
+              <div><dt>Context</dt><dd>Selected JSX / bounded source</dd></div>
+              <div><dt>Controls</dt><dd>Patch validation / stale-plan rejection</dd></div>
+              <div><dt>Evidence</dt><dd>125 automated tests / atomic history</dd></div>
+            </dl>
+            <span class="project-open">Open code →</span>
+          </a>
           <a class="project-card" href="/btc-jev">
-            <div class="project-card-top">
-              <span class="project-index">01</span>
-              <span class="status">Live</span>
-            </div>
-            <div>
-              <h3>BTC–Jev</h3>
-              <p>A continuously scored BTC direction experiment using TypeSafe Jev probability judgments and fixed market-data inputs.</p>
-            </div>
+            <div class="project-card-top"><span class="project-index">02</span><span class="status">Deployed</span></div>
+            <div><h3>BTC–Jev</h3><p>A deployed AI decision experiment with scheduled market processing, deterministic guardrails, limited model requests, and a public evaluation dashboard. Paper-only; no real orders.</p></div>
             <dl>
-              <div><dt>Forecasts</dt><dd>15m · 1h · 4h · UTC close</dd></div>
-              <div><dt>Latest 15m call</dt><dd id="latest-call">Collecting data</dd></div>
-              <div><dt>Execution</dt><dd>Cloudflare Worker · D1</dd></div>
+              <div><dt>Decisions</dt><dd>Candidate gating / long-only paper policy</dd></div>
+              <div><dt>Controls</dt><dd>Daily request reservations / pause switch</dd></div>
+              <div><dt>Evaluation</dt><dd>Simulated fills, costs, and outcomes</dd></div>
             </dl>
-            <span class="project-open">Open experiment →</span>
+            <span class="project-open">Open dashboard →</span>
           </a>
-          <a class="project-card" href="/jev-board/">
-            <div class="project-card-top">
-              <span class="project-index">02</span>
-              <span class="status">Live</span>
-            </div>
-            <div>
-              <h3>Jev Board Lab</h3>
-              <p>An interactive explorer for importing, filtering, and questioning Jev Board datasets directly in the browser.</p>
-            </div>
+          <a class="project-card" href="https://github.com/WebGrga/problemhunter" target="_blank" rel="noreferrer">
+            <div class="project-card-top"><span class="project-index">03</span><span class="status status-prototype">Experimental</span></div>
+            <div><h3>Problem Hunter</h3><p>An AI research pipeline with source-backed findings, structured evaluations, caching, cost controls, and audit reports. Findings need human review; reliable autonomous opportunity discovery is not established.</p></div>
             <dl>
-              <div><dt>Current board</dt><dd>827 ideas</dd></div>
-              <div><dt>Analysis</dt><dd>Local questions · CSV import</dd></div>
-              <div><dt>Optional API</dt><dd>Cloudflare Worker · Jev</dd></div>
+              <div><dt>Evidence</dt><dd>Attributed source passages / dates</dd></div>
+              <div><dt>Controls</dt><dd>Request ceilings / per-run cost limits</dd></div>
+              <div><dt>Outputs</dt><dd>SQLite ledger / JSON and Markdown</dd></div>
             </dl>
-            <span class="project-open">Open explorer →</span>
+            <span class="project-open">Open code →</span>
           </a>
+          <p class="implementation-note">Frontend Director is a development prototype without a build-before-apply gate. BTC–Jev keeps archived direction forecasts separate from current paper results. Problem Hunter's general remedy research requires a reviewed workflow brief.</p>
+        </section>
+        <section class="lab-secondary" aria-labelledby="secondary-title">
+          <h2 id="secondary-title">More experiments</h2>
+          <a href="/jev-board/">Jev Board Lab <span>Browser-based dataset exploration and optional Jev questions ↗</span></a>
         </section>
       </main>
       <footer class="lab-footer"><span>RG Lab</span><span>Built by Roko Grga</span></footer>
