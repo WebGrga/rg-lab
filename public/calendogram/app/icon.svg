@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a5288"/>
+      <stop offset="1" stop-color="#14263f"/>
+    </linearGradient>
+    <clipPath id="card">
+      <rect x="92" y="104" width="280" height="304" rx="34"/>
+    </clipPath>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- calendar page with a list of coloured status rows -->
+  <rect x="92" y="114" width="280" height="304" rx="34" fill="#0b1626" opacity="0.35"/>
+  <rect x="92" y="104" width="280" height="304" rx="34" fill="#ffffff"/>
+  <rect x="92" y="104" width="280" height="62" fill="#dbe5f1" clip-path="url(#card)"/>
+  <rect x="148" y="80" width="20" height="50" rx="10" fill="#ffffff" stroke="#14263f" stroke-width="8"/>
+  <rect x="296" y="80" width="20" height="50" rx="10" fill="#ffffff" stroke="#14263f" stroke-width="8"/>
+
+  <rect x="124" y="196" width="58" height="36" rx="10" fill="#34a853"/>
+  <rect x="198" y="203" width="142" height="22" rx="11" fill="#e1e8f0"/>
+  <rect x="124" y="254" width="58" height="36" rx="10" fill="#f6b93b"/>
+  <rect x="198" y="261" width="118" height="22" rx="11" fill="#e1e8f0"/>
+  <rect x="124" y="312" width="58" height="36" rx="10" fill="#e5534b"/>
+  <rect x="198" y="319" width="96" height="22" rx="11" fill="#e1e8f0"/>
+
+  <!-- microphone: tasks are dictated -->
+  <circle cx="378" cy="384" r="86" fill="#e5534b" stroke="#14263f" stroke-width="16"/>
+  <rect x="357" y="328" width="42" height="70" rx="21" fill="#ffffff"/>
+  <path d="M338 380a40 40 0 0 0 80 0" fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="round"/>
+  <path d="M378 420v20M356 442h44" fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="round"/>
+</svg>

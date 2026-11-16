@@ -11,6 +11,7 @@ export default defineConfig({
         localens: resolve(import.meta.dirname, "localens/index.html"),
         gamefinder: resolve(import.meta.dirname, "gamefinder/index.html"),
         momentumLab: resolve(import.meta.dirname, "momentum-lab/index.html"),
+        calendogram: resolve(import.meta.dirname, "calendogram/index.html"),
       },
     },
   },
