@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Calendogram organises tasks by person, place, project and date, like the coloured Excel sheet it replaces, and turns spoken notes into tasks." />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:title" content="Calendogram | RG Lab" />
+    <meta property="og:description" content="Calendogram organises tasks by person, place, project and date, like the coloured Excel sheet it replaces, and turns spoken notes into tasks." />
+    <meta property="og:url" content="https://lab.rokogrga.com/calendogram/" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://lab.rokogrga.com/calendogram/" />
+    <link rel="preload" href="/fonts/PixelifySans-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <title>Calendogram | RG Lab</title>
+  </head>
+  <body>
+    <div class="lab-shell">
+      <header class="lab-header">
+        <a href="/" class="brand">RG Lab</a>
+        <a href="https://rokogrga.com">rokogrga.com ↗</a>
+      </header>
+      <main class="proj-main">
+        <a class="crumb" href="/">← All experiments</a>
+        <section class="proj-hero">
+          <div>
+            <span class="section-kicker">Voice to-do list for building sites</span>
+            <h1>Calendogram</h1>
+            <p class="proj-lede">Calendogram keeps tasks by person, place, project and date, with the colour legend of the Excel sheet it replaces.</p>
+            <p class="proj-lede">On site you just talk: the note is written down and split into dated tasks with the right person, ready to review.</p>
+            <div class="proj-actions"><a class="pbtn" href="/calendogram/app/">Open the app →</a><a class="pbtn ghost" href="https://rokogrga.com" target="_blank" rel="noreferrer">rokogrga.com ↗</a></div>
+          </div>
+          <figure class="video-slot" data-src="/calendogram/video.mp4">
+            <video controls muted playsinline preload="metadata" aria-label="Calendogram in 60 seconds"></video>
+            <div class="video-empty"><strong>Video soon</strong><span>A 60-second walkthrough of Calendogram goes here.</span></div>
+          </figure>
+        </section>
+
+        <section class="proj-cols">
+          <div class="panel">
+            <h2>What it shows</h2>
+            <ul><li><b>Excel-like grid on PC, a list on the phone.</b> Click a cell to edit, Tab to move; group by person, place, project, date or colour.</li><li><b>Projects with offers.</b> Ask several firms for an offer, pick one, and the others are marked not chosen (see the example house "Ivica").</li><li><b>Voice notes.</b> In the real app OpenAI writes the note down and splits it into tasks you review before saving, in Croatian, English or German.</li><li><b>Offline first.</b> Everything works without signal and syncs through a small server when it comes back.</li></ul>
+          </div>
+          <div class="panel">
+            <h2>About this demo</h2>
+            <p>The demo is the real app with the server switched off: sample tasks and an example project, saved only in this browser. Settings → Log out resets it.</p><p>Voice here uses your browser's own dictation and makes one task per note. The AI sorting needs the server, so it is shown in the video instead.</p>
+            <div class="stack"><span>React 19</span><span>TypeScript</span><span>Dexie (IndexedDB)</span><span>Hono + SQLite</span><span>OpenAI speech + parsing</span><span>PWA, Fly.io</span></div>
+          </div>
+        </section>
+      </main>
+      <footer class="lab-footer"><span>RG Lab</span><span>Built by Roko Grga</span></footer>
+    </div>
+    <script type="module" src="/src/project.ts"></script>
+  </body>
+</html>

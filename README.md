@@ -14,6 +14,7 @@ RG Lab deliberately does not contain the implementation of its listed projects (
 | `/jev-board/` | `WebGrga/jev-board-lab` | Netlify frontend, optional Cloudflare Worker API |
 | `/localens/` | `WebGrga/localens` | Project page; `/localens/demo/` is a static snapshot of the app's report on fictional fixture data |
 | `/gamefinder/` | `WebGrga/gamefinder` | Project page with the scoring rules ported to the browser, fictional sample games |
+| `/calendogram/` | `WebGrga/Calendogram` (private) | Project page; `/calendogram/app/` is the real frontend built with a local stub instead of the server (`demos/calendogram/`), sample data in IndexedDB |
 | `/momentum-lab/` | `WebGrga/momentum-lab` | Project page; `/momentum-lab/app/` proxies the app's GitHub Pages build (sample data, localStorage only) |
 
 ## Demo rules

@@ -1,0 +1,3 @@
+.lab-demo-bar { display: flex; flex-wrap: wrap; gap: 4px 14px; justify-content: space-between; align-items: center; padding: 7px 14px; background: #0b0f14; color: #e8edf2; font: 12px/1.4 system-ui, sans-serif; }
+.lab-demo-bar a { color: #5aa9ff; white-space: nowrap; }
+.lab-demo-bar b { font-weight: 600; }
