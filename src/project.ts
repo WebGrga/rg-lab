@@ -10,7 +10,8 @@ for (const slot of document.querySelectorAll<HTMLElement>(".video-slot[data-src]
       const type = r.headers.get("content-type") || "";
       if (!r.ok || !type.startsWith("video/")) return;
       const video = slot.querySelector("video")!;
-      video.addEventListener("loadeddata", () => slot.classList.add("has-video"), { once: true });
+      // loadedmetadata, not loadeddata: with preload="metadata" iOS Safari may never fire loadeddata.
+      video.addEventListener("loadedmetadata", () => slot.classList.add("has-video"), { once: true });
       video.src = src;
     })
     .catch(() => {});
