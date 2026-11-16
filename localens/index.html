@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Localens audits how a local business shows up when customers ask AI, Google Maps and search, then hands over a fix plan ordered by payoff." />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:title" content="Localens | RG Lab" />
+    <meta property="og:description" content="Localens audits how a local business shows up when customers ask AI, Google Maps and search, then hands over a fix plan ordered by payoff." />
+    <meta property="og:url" content="https://lab.rokogrga.com/localens/" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://lab.rokogrga.com/localens/" />
+    <link rel="preload" href="/fonts/PixelifySans-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <title>Localens | RG Lab</title>
+  </head>
+  <body>
+    <div class="lab-shell">
+      <header class="lab-header">
+        <a href="/" class="brand">RG Lab</a>
+        <a href="https://rokogrga.com">rokogrga.com ↗</a>
+      </header>
+      <main class="proj-main">
+        <a class="crumb" href="/">← All experiments</a>
+        <section class="proj-hero">
+          <div>
+            <span class="section-kicker">AI and local visibility audits</span>
+            <h1>Localens</h1>
+            <p class="proj-lede">Localens checks how a local business shows up when customers ask ChatGPT, Gemini, Perplexity or Google, and in Maps and search.</p>
+            <p class="proj-lede">It ends with a report an agency can hand to its client: who AI names instead of you, and the fixes ordered by payoff.</p>
+            <div class="proj-actions"><a class="pbtn" href="/localens/demo/">Open the sample report →</a><a class="pbtn ghost" href="https://github.com/WebGrga/localens" target="_blank" rel="noreferrer">Code on GitHub ↗</a></div>
+          </div>
+          <figure class="video-slot" data-src="/localens/video.mp4">
+            <video controls muted playsinline preload="metadata" aria-label="Localens in 60 seconds"></video>
+            <div class="video-empty"><strong>Video soon</strong><span>A 60-second walkthrough of Localens goes here.</span></div>
+          </figure>
+        </section>
+
+        <section class="proj-cols">
+          <div class="panel">
+            <h2>What it shows</h2>
+            <ul><li><b>Honest numbers.</b> Results are ranges across repeated runs, and a part that was not measured says so instead of showing zero.</li><li><b>Share of voice.</b> Mention, recommendation and citation are counted separately, against the competitors AI names.</li><li><b>A fix plan, not a score dump.</b> Fixes are ranked by expected effect divided by effort, starting with things like AI crawlers blocked at Cloudflare.</li><li><b>Spend control.</b> Every paid call is priced before it runs, capped by a budget and recorded.</li></ul>
+          </div>
+          <div class="panel">
+            <h2>About this demo</h2>
+            <p>The sample report is the app's own report view, rendered once from the repo's fictional fixture clinic. The AI numbers are illustrative and nothing runs live here, so no keys and no costs.</p><p>The full app is Next.js with a Postgres database, a background audit worker and an MCP server; see the repo to run it.</p>
+            <div class="stack"><span>Next.js 16</span><span>React 19</span><span>TypeScript</span><span>Prisma + Postgres</span><span>OpenAI / Gemini / Perplexity</span><span>MCP</span></div>
+          </div>
+        </section>
+      </main>
+      <footer class="lab-footer"><span>RG Lab</span><span>Built by Roko Grga</span></footer>
+    </div>
+    <script type="module" src="/src/project.ts"></script>
+  </body>
+</html>

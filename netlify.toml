@@ -44,6 +44,12 @@
   force = true
 
 [[redirects]]
+  from = "/momentum-lab/app/*"
+  to = "https://webgrga.github.io/momentum-lab/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
