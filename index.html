@@ -6,10 +6,11 @@
     <meta name="description" content="RG Lab by Roko Grga: AI systems and agentic workflows with bounded context, validation, controlled execution, and evaluation." />
     <meta name="color-scheme" content="dark" />
     <meta property="og:title" content="RG Lab | AI Engineering Experiments" />
-    <meta property="og:description" content="Frontend Director, BTC–Jev, and Problem Hunter. Working systems, evidence, and explicit limits." />
+    <meta property="og:description" content="Frontend Director, BTC–Jev, Problem Hunter, and browser demos of Localens, Gamefinder and Momentum Lab. Working systems, evidence, and explicit limits." />
     <meta property="og:url" content="https://lab.rokogrga.com/" />
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://lab.rokogrga.com/" />
+    <link rel="preload" href="/fonts/PixelifySans-400-latin.woff2" as="font" type="font/woff2" crossorigin />
     <title>RG Lab | AI Engineering Experiments</title>
   </head>
   <body>
@@ -23,6 +24,32 @@
           <span class="section-kicker">AI engineering by Roko Grga</span>
           <h1>AI systems.<br />Tested in public.</h1>
           <p>I build agentic workflows with a full-stack development background: bounded context, validated outputs, controlled execution, and evaluations that expose the limits.</p>
+        </section>
+        <section class="lab-try" aria-labelledby="try-title">
+          <div class="lab-section-heading">
+            <h2 id="try-title">Try it in your browser</h2>
+            <span>Sample data, no sign-up, a minute each</span>
+          </div>
+          <div class="try-grid">
+            <a class="try-tile" href="/localens/">
+              <span class="try-tag">Sample report</span>
+              <h3>Localens</h3>
+              <p>How a local business shows up when customers ask AI, Maps and search, and the fixes ordered by payoff.</p>
+              <span class="try-go">Open →</span>
+            </a>
+            <a class="try-tile" href="/gamefinder/">
+              <span class="try-tag gold">Interactive</span>
+              <h3>Gamefinder</h3>
+              <p>A trend radar that ranks indie games by YouTube creator opportunity. Change the signals and watch every point explain itself.</p>
+              <span class="try-go">Play with it →</span>
+            </a>
+            <a class="try-tile" href="/momentum-lab/">
+              <span class="try-tag blue">Full app</span>
+              <h3>Momentum Lab</h3>
+              <p>A local-first workspace for personal experiments, routines and notes. The whole app runs in your browser.</p>
+              <span class="try-go">Open →</span>
+            </a>
+          </div>
         </section>
         <section class="lab-projects" aria-labelledby="projects-title">
           <div class="lab-section-heading">
@@ -68,7 +95,7 @@
       </main>
       <footer class="lab-footer"><span>RG Lab</span><span>Built by Roko Grga</span></footer>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/index-main.ts"></script>
   </body>
 </html>
 

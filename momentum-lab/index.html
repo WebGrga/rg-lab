@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Momentum Lab is a local-first workspace for running personal experiments, building routines, keeping notes and reviewing progress." />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:title" content="Momentum Lab | RG Lab" />
+    <meta property="og:description" content="Momentum Lab is a local-first workspace for running personal experiments, building routines, keeping notes and reviewing progress." />
+    <meta property="og:url" content="https://lab.rokogrga.com/momentum-lab/" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://lab.rokogrga.com/momentum-lab/" />
+    <link rel="preload" href="/fonts/PixelifySans-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <title>Momentum Lab | RG Lab</title>
+  </head>
+  <body>
+    <div class="lab-shell">
+      <header class="lab-header">
+        <a href="/" class="brand">RG Lab</a>
+        <a href="https://rokogrga.com">rokogrga.com ↗</a>
+      </header>
+      <main class="proj-main">
+        <a class="crumb" href="/">← All experiments</a>
+        <section class="proj-hero">
+          <div>
+            <span class="section-kicker">Local-first personal experiments</span>
+            <h1>Momentum Lab</h1>
+            <p class="proj-lede">Momentum Lab treats self-improvement like a lab: a hypothesis, metrics, a deadline and a verdict for every experiment.</p>
+            <p class="proj-lede">Routines, notes, ideas and a weekly review live beside it, and all of it stays on your device.</p>
+            <div class="proj-actions"><a class="pbtn" href="/momentum-lab/app/">Open the app →</a><a class="pbtn ghost" href="https://github.com/WebGrga/momentum-lab" target="_blank" rel="noreferrer">Code on GitHub ↗</a></div>
+          </div>
+          <figure class="video-slot" data-src="/momentum-lab/video.mp4">
+            <video controls muted playsinline preload="metadata" aria-label="Momentum Lab in 60 seconds"></video>
+            <div class="video-empty"><strong>Video soon</strong><span>A 60-second walkthrough of Momentum Lab goes here.</span></div>
+          </figure>
+        </section>
+
+        <section class="proj-cols">
+          <div class="panel">
+            <h2>What it shows</h2>
+            <ul><li><b>A real working app.</b> Log a value, tick a routine, close an experiment with a verdict: it all saves.</li><li><b>Metrics that know direction.</b> Each metric knows whether up or down is better and compares against its baseline.</li><li><b>The Base.</b> Seven foundations (body, mind, habits and more) roll up into one radar of where you stand.</li><li><b>Local-first.</b> No account and no server: data stays in your browser, with JSON export and import. The desktop build writes a real file via Electron.</li></ul>
+          </div>
+          <div class="panel">
+            <h2>About this demo</h2>
+            <p>The app opens with sample experiments, routines and notes so there is something to click. Changes save only in your own browser; Data → Reset brings the sample back.</p><p>This is the same code as the desktop app, built for the browser.</p>
+            <div class="stack"><span>TypeScript</span><span>Vite</span><span>Electron</span><span>localStorage</span><span>No framework</span></div>
+          </div>
+        </section>
+      </main>
+      <footer class="lab-footer"><span>RG Lab</span><span>Built by Roko Grga</span></footer>
+    </div>
+    <script type="module" src="/src/project.ts"></script>
+  </body>
+</html>

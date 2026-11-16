@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gamefinder ranks indie games by creator opportunity: rising attention, build and guide potential, and how crowded YouTube already is." />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:title" content="Gamefinder | RG Lab" />
+    <meta property="og:description" content="Gamefinder ranks indie games by creator opportunity: rising attention, build and guide potential, and how crowded YouTube already is." />
+    <meta property="og:url" content="https://lab.rokogrga.com/gamefinder/" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://lab.rokogrga.com/gamefinder/" />
+    <link rel="preload" href="/fonts/PixelifySans-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <title>Gamefinder | RG Lab</title>
+  </head>
+  <body>
+    <div class="lab-shell">
+      <header class="lab-header">
+        <a href="/" class="brand">RG Lab</a>
+        <a href="https://rokogrga.com">rokogrga.com ↗</a>
+      </header>
+      <main class="proj-main">
+        <a class="crumb" href="/">← All experiments</a>
+        <section class="proj-hero">
+          <div>
+            <span class="section-kicker">Trend radar for YouTube creators</span>
+            <h1>Gamefinder</h1>
+            <p class="proj-lede">Gamefinder ranks indie games by how good an opportunity they are for a YouTube creator, not by raw popularity.</p>
+            <p class="proj-lede">Every score explains itself: rising attention and build potential add points, a crowded topic takes them away.</p>
+            <div class="proj-actions"><a class="pbtn" href="#radar">Try the radar ↓</a><a class="pbtn ghost" href="https://github.com/WebGrga/gamefinder" target="_blank" rel="noreferrer">Code on GitHub ↗</a></div>
+          </div>
+          <figure class="video-slot" data-src="/gamefinder/video.mp4">
+            <video controls muted playsinline preload="metadata" aria-label="Gamefinder in 60 seconds"></video>
+            <div class="video-empty"><strong>Video soon</strong><span>A 60-second walkthrough of Gamefinder goes here.</span></div>
+          </figure>
+        </section>
+        <section class="gf" id="radar" aria-labelledby="radar-title">
+          <div class="gf-intro"><h2 id="radar-title">The radar</h2><p>Fictional sample games. Pick one, then change its signals.</p></div>
+          <div class="gf-grid">
+            <ol class="gf-list" id="gf-list" aria-label="Games ranked by opportunity"></ol>
+            <div class="gf-detail" id="gf-detail" aria-live="polite"></div>
+          </div>
+        </section>
+        <section class="proj-cols">
+          <div class="panel">
+            <h2>What it shows</h2>
+            <ul><li><b>Explainable scoring.</b> Each point in the score comes from a named rule you can read, not a black box.</li><li><b>Saturation awareness.</b> Push a game past 35 recent uploads and it loses points: demand without competition is the target.</li><li><b>Creator output.</b> The scores turn into video angles a creator could record today.</li><li><b>Offline first.</b> The real tool collects from Steam, Reddit and optionally YouTube into SQLite, and also runs fully offline.</li></ul>
+          </div>
+          <div class="panel">
+            <h2>About this demo</h2>
+            <p>The radar on this page runs the same scoring rules as the Python tool, ported to the browser, on fictional sample games. Nothing is fetched from Steam, YouTube or Reddit.</p><p>Drag the sliders or toggle tags and watch the ranking and the reasons change.</p>
+            <div class="stack"><span>Python</span><span>SQLite</span><span>Steam / Reddit / YouTube collectors</span><span>TypeScript port for this demo</span></div>
+          </div>
+        </section>
+      </main>
+      <footer class="lab-footer"><span>RG Lab</span><span>Built by Roko Grga</span></footer>
+    </div>
+    <script type="module" src="/src/gamefinder.ts"></script>
+  </body>
+</html>
