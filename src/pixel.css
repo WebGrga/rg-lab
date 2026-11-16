@@ -3,7 +3,7 @@
 @font-face { font-family: "Pixelify Sans"; font-style: normal; font-weight: 400 700; font-display: swap; src: url(/fonts/PixelifySans-400-latin-ext.woff2) format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1E00-1E9F, U+20A0-20AB, U+20AD-20C4, U+2C60-2C7F, U+A720-A7FF; }
 
 /* font-feature-settings survives the `font` shorthand; Pixelify turns "fi" into a ligature. */
-body { font-feature-settings: "liga" 0, "clig" 0, "calt" 0, "dlig" 0; }
+body, body * { font-feature-settings: "liga" 0, "clig" 0, "calt" 0, "dlig" 0; }
 :root { --pixel: "Pixelify Sans", var(--mono); --panel: #111821; --gold: #e3b341; --shadow: #000; }
 
 .pixel { font-family: var(--pixel); letter-spacing: 0; }
