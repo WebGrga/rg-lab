@@ -22,6 +22,11 @@ export default defineConfig({
         if (r && r.id.split(String.fromCharCode(92)).join('/') === realApi) return resolve(here, 'api.ts');
         return null;
       },
+      // The app links its logo at the site root; the demo lives under /calendogram/app/.
+      transform(code, id) {
+        if (!id.split(String.fromCharCode(92)).join('/').includes('/src/')) return null;
+        return code.includes('"/icon.svg"') ? code.replaceAll('"/icon.svg"', '"/calendogram/app/icon.svg"') : null;
+      },
     },
   ],
   build: { outDir: process.env.DEMO_OUT ?? resolve(here, 'dist'), emptyOutDir: true },
